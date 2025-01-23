@@ -4,7 +4,7 @@ def function1(x,y):
 
 
 
-def function2(a):
+def function2(x):
     print('Hi IT315')
     return True
 

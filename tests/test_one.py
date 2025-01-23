@@ -1,6 +1,12 @@
 import unittest
 
-from a_dir.a import function1, function2  # Import the functions you want to test
+import sys
+import os
+
+# Add the parent directory to sys.path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from calculator import function1, function2  # Import the functions you want to test
 
 class TestA(unittest.TestCase):
 
